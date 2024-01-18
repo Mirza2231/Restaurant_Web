@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/About.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="JQuery/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+    <title>About Us</title>
+
+</head>
+
+<body>
+    <!-- Header section -->
+    <section id="header">
+        <div class="container-fluid responsive_nav_color">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+                    <a href="index.html" class="navbar-brand">FoodDelicious.com</a>
+                    <button class="navbar-toggler" type="button" data-bs-target="#navbarNav" data-bs-toggle="collapse"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="ml-auto"></div>
+                        <ul class="navbar-nav ">
+                            <li class="nav-item ">
+                                <a href="index.html" class="nav-link text-white">Home</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="Menu.html" class="nav-link text-white">Menu</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="our deals.html" class="nav-link text-white">Our Deals</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a href="About us.html" class="nav-link text-white">About us</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="Contact us.html" class="nav-link text-white">Contact us</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+
+                </div>
+
+            </nav>
+        </div>
+    </section>
+    <!-- Header Section End -->
+
+    <!-- Slide section  -->
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active"
+                style="background-image: url(./img/About/Slides/sevices2.jpg); height: 100vh;">
+                <div class="carousel-caption text-center">
+                    <h1>Our Fast Services</h1>
+                    <h3>We Provide a Clean and Fast Service To You.</h3>
+                    <p><a href="#first" class="btn btn-lg btn-outline-light">View Detail</a></p>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url(./img/About/Slides/ingrediant.jpg); height: 100vh;">
+
+                <div class="carousel-caption text-center">
+                    <h1>Our Ingredient</h1>
+                    <h3>We Use Best Ingredient In Our Food.</h3>
+                    <p><a href="#second" class="btn btn-lg btn-outline-light">View Detail</a></p>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url(./img/About/Slides/money.jpg); height: 100vh;">
+                <div class="carousel-caption text-center">
+                    <h1>Low Price</h1>
+                    <h3>We Provide Everything In Low Price.</h3>
+                    <p><a href="#third" class="btn btn-lg btn-outline-light">View Detail</a></p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Slide Section End -->
+
+    <!-- About our Chef -->
+
+    <h2 class="chef"><u>Our Chef:</u></h2>
+
+    <div class="container marketing">
+
+
+        <div class="row text-center">
+            <div class="col-lg-4">
+                <img src="img/About/Chef/Salt Bae.jpg" alt="" class="rounded-circle">
+
+                <h2>Salt Bae</h2>
+                <p>Nusret Gökçe, nicknamed Salt Bae, is a Turkish chef, food entertainer and restaurateur.</p>
+                <p><a class="btn btn-secondary" href="https://en.wikipedia.org/wiki/Salt_Bae" target="blank">Learn
+                        More</a></p>
+            </div>
+            <div class="col-lg-4">
+                <img src="img/About/Chef/Ferran Adrià.jpg" alt="" class="rounded-circle">
+
+                <h2>Ferran Adrià</h2>
+                <p>Ferran Adrià i Acosta is a Spanish chef. He is considered one of the best chefs in the world.</p>
+                <p><a class="btn btn-secondary" href="https://en.wikipedia.org/wiki/Ferran_Adri%C3%A0"
+                        target="blank">Learn More</a></p>
+            </div>
+            <div class="col-lg-4">
+                <img src="img/About/Chef/gordon ramsay.jpg" alt="" class="rounded-circle">
+
+                <h2>Gordon Ramsay</h2>
+                <p>Gordon James Ramsay OBE is a British chef, restaurateur, television personality and writer.</p>
+                <p><a class="btn btn-secondary" href="https://en.wikipedia.org/wiki/Gordon_Ramsay" target="blank">Learn
+                        More</a></p>
+            </div>
+        </div>
+
+        <!-- About Our Chef End -->
+
+        <!-- About Us Detail -->
+        <hr class="featurette-divider">
+
+        <div class="row featurette" id="first">
+            <div class="col-md-7">
+                <h1 class="featurette-heading center">Our Fast Services. <span class="text-muted">We Provide a Clean and
+                        Fast Service To You..</span></h1>
+                <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
+                    prose here.</p>
+            </div>
+            <div class="col-md-5">
+                <img src="img/About/Details/Services.jpg" alt="Services" class="img-fluid mx-auto">
+
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette" id="second">
+            <div class="col-md-7 order-md-2">
+                <h1 class="featurette-heading center">Our Ingredient. <span class="text-muted">We Use Best Ingredient In
+                        Our Food.</span></h1>
+                <p class="lead">Be it food, service or the ambiance, we keep elevating our ingrediants quality standards
+                    to new
+                    levels. At FoodDelicious food is not just meant for thought. Food means quality by all means. That
+                    is why FoodDelicious is served to you and your loved ones with all our heart and soul</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img src="img/About/Details/Ingrediant.jpg" alt="Ingredient" class="img-fluid mx-auto">
+
+            </div>
+        </div>
+
+        <hr class="featurette-divider" id="third">
+
+        <div class="row featurette">
+            <div class="col-md-7 ">
+                <h1 class="featurette-heading center">And lastly, this one. <span class="text-muted">Checkmate.</span>
+                </h1>
+                <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really
+                    intended to be actually read, simply here to give you a better view of what this would look like
+                    with some actual content. Your content.</p>
+            </div>
+            <div class="col-md-5">
+                <img src="img/About/Details/price.jpg" alt="Price" class="img-fluid mx-auto">
+
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+
+
+    </div>
+    <!-- About Us Detail End -->
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="container footer row align-items-center">
+            <div class="col-md-7 col-lg-8">
+                <p>Copyright © 2020-2024 All right reserved</p>
+            </div>
+            <div class="col-md-5 col-lg-4">
+                <div class="text-center text-md-right">
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item">
+                            <a href="http://www.facebook.com" target="blank" class="btn-floating btn-lg"
+                                style="font-size: 23px;"><img src="./icon/icons8-facebook-20.png" alt=""></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="http://www.twitter.com" target="blank" class="btn-floating btn-lg"
+                                style="font-size: 23px;"><img src="./icon/icons8-twitterx-20.png" alt=""></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.instagram.com/" target="blank" class="btn-floating btn-lg"
+                                style="font-size: 23px;"><img src="./icon/icons8-instagram-20.png" alt=""></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="http://www.linkedin.com" target="blank" class="btn-floating btn-lg"
+                                style="font-size: 23px;"><img src="./icon/icons8-linkedin-20.png~" alt=""></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="http://www.youtube.com" target="blank" class="btn-floating btn-lg"
+                                style="font-size: 23px;"><img src="./icon/icons8-youtube-20.png" alt=""></a>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Footer End -->
+
+        <!-- loader -->
+        <div class="loader-container">
+            <img src="img/Loader/real4.gif">
+
+        </div>
+        <!-- loader End -->
+
+        <!-- script tag -->
+        <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+        <script src="js/loader.js"></script>
+        <!-- script tag -->
+</body>
+
+</html>

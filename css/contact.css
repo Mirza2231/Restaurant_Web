@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#header {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+
+}
+
+.navbar {
+    padding: 50px 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    color: #ccc !important;
+
+}
+
+.nav-item {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 50px;
+}
+
+.nav-link {
+    color: #ccc !important;
+    letter-spacing: 2px;
+    font-size: 1em;
+    font-weight: 700;
+
+}
+
+.nav-link:hover {
+    background: #dcdde1 !important;
+    color: #262626 !important;
+    border-radius: 5px;
+    transition: all 0.6s ease 0s;
+}
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(../img/Contact/contact2.jpg);
+    background-size: cover;
+}
+
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2 {
+    /* margin: 6%; */
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.contact .content p {
+    margin: 3%;
+    font-weight: 300;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 30px; */
+}
+
+.container .cont .box {
+    position: relative;
+    padding: 12px 0;
+    display: flex;
+}
+
+.cont {
+    width: 80%;
+    margin-left: 0;
+}
+
+.container .cont .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.container .cont .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .cont .box .text h3 {
+    font-weight: 500;
+    color: #fff;
+}
+
+.contactform {
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+    margin-left: 15%;
+}
+
+.contactform h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contactform .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactform .inputBox input,
+.contactform .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactform .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactform .inputBox input:focus~span,
+.contactform .inputBox input:valid~span,
+.contactform .inputBox textarea:focus~span,
+.contactform .inputBox textarea:valid~span {
+
+    color: #243545;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactform .inputBox input[type="submit"] {
+    width: 100px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    background-color: black;
+
+}
+
+.cont {
+    margin-right: 5px;
+}
+
+.contact {
+    padding: 5px;
+
+}
+
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.container .contactInfo,
+.contactform {
+    width: 80%;
+    margin-left: 0;
+}
+
+
+footer {
+    padding: 45px;
+    margin-left: 10%;
+}
+
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.loader-container.fade-out {
+    top: -120%;
+}
+
+
+@media (max-width:991px) {
+    .responsive_nav_color {
+        background-color: black;
+    }
+
+    .nav-item {
+        font-weight: 600;
+        text-transform: uppercase;
+        padding-left: 10px;
+    }
+
+}
+
+@media (max-width:768px) {
+    .responsive_cont_container {
+        flex-direction: column;
+    }
+
+    .contact .content {
+        max-width: 800px;
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    #header {
+        position: relative;
+        width: 100%;
+
+    }
+}
